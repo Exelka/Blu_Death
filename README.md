@@ -1,6 +1,6 @@
 # Bluetooth_Killer
 
-# INSTALL PYTHON & LIB
+# INSTALL PYTHON & LIB [ROOT]
 
 sudo sh Killer_Install.sh
 
