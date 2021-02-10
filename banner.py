@@ -4,4 +4,4 @@ def banner():
     print(colored('#    # #      #    #        #  m"    #    #      #      #      #   "#', 'red'))
     print(colored('#mmmm" #      #    #        #m#      #    #      #      #mmmmm #mmmm"', 'red'))
     print(colored('#    # #      #    #        #  #m    #    #      #      #      #   "m', 'red'))
-    print(colored('#mmmm" #mmmmm "mmmm"        #   "m mm#mm  #mmmmm #mmmmm #mmmmm #    m', 'red'))
+    print(colored('#mmmm" #mmmmm "mmmm"        #   "m mm#mm  #mmmmm #mmmmm #mmmmm #    m  v1.0', 'red'))
