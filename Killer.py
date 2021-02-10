@@ -91,6 +91,8 @@ if dev == 'Yes':
         elif numb == '4':
             update = input(colored('Update Killer? (Yes/No): ', 'blue'))
             if update == 'Yes':
+                os.system('clear')
+                banner()
                 print('The repository will download in ~/ or to your desktop\n(depending on your system)')
                 print('update will start in 10 seconds...')
                 time.sleep(10)
