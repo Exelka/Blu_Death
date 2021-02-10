@@ -89,6 +89,8 @@ if dev == 'Yes':
             print('Wrote the code Extremmer781\nVK - vk.com/extremmer781\nTelegram - t.me/extremmer781')
         
         elif numb == '4':
+            os.system('clear')
+            banner()
             update = input(colored('Update Killer? (Yes/No): ', 'blue'))
             if update == 'Yes':
                 os.system('clear')
