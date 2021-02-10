@@ -96,7 +96,7 @@ if dev == 'Yes':
                 os.system('clear')
                 banner()
                 print('The repository will download in ~/ or to your desktop\n(depending on your system)')
-                print('update will start in 10 seconds...')
+                print('Update will start in 10 seconds...')
                 time.sleep(10)
                 os.system('sh update.sh')
                 print('Shutting down the script...')
