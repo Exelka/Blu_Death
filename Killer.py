@@ -97,7 +97,7 @@ if dev == 'Yes':
                 os.system('sh update.sh')
                 print('Shutting down the script...')
                 time.sleep(5)
-                os.exit(0)
+                sys.exit(0)
             else:
                 os.system('clear')
                 banner()
