@@ -8,12 +8,12 @@ import os
 try:
     from termcolor import colored
 except ModuleNotFoundError:
-    print(colored('Error 02 - No library "termcolor" please run "pip install termcolor" ', 'red'))
+    print(colored('Error 01 - No library "termcolor" please run "pip install termcolor" ', 'red'))
     time.sleep(5)
     sys.exit(0)
 
 if os.sys.platform == 'win32':
-    print(colored(' Error 01 - This script only works on Linux!!!', 'red'))
+    print(colored(' Error 02 - This script only works on Linux!!!', 'red'))
     time.sleep(5)
     sys.exit(0)
 else:
