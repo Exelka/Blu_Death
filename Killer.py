@@ -29,6 +29,7 @@ except ModuleNotFoundError:
 
 try:
     f = open('update.sh')
+    f.close()
 except IOError:
     print(colored('Error 04 - No File "update.py" ', 'red'))
     time.sleep(5)
