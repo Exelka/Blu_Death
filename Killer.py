@@ -5,13 +5,6 @@ import sys
 import time
 import os
 #============================SYSTEM_CHEK====================================
-if os.sys.platform == 'win32':
-    print(colored(' Error 01 - This script only works on Linux!!!', 'red'))
-    time.sleep(5)
-    sys.exit(0)
-else:
-    os.system('clear')
-
 try:
     from termcolor import colored
 except ModuleNotFoundError:
@@ -19,6 +12,14 @@ except ModuleNotFoundError:
     time.sleep(5)
     sys.exit(0)
 
+if os.sys.platform == 'win32':
+    print(colored(' Error 01 - This script only works on Linux!!!', 'red'))
+    time.sleep(5)
+    sys.exit(0)
+else:
+    os.system('clear')
+
+    
 try:
     from banner import banner
 except ModuleNotFoundError:
