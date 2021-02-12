@@ -81,7 +81,7 @@ if dev == 'Yes':
 #==========================EXIT=============================================
             time.sleep(1)
             os.system('clear') 
-            print(colored('successfully sent '+ str(thear) +' packages to '+ MAC_adress +'!\nPlease CTRL + Z or Enter to get out','green'))
+            print(colored('Successfully sent '+ str(thear) +' packages to '+ MAC_adress +'!\nPlease CTRL + Z or Enter to get out','green'))
             input()
             os.exit(0)
 
