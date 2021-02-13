@@ -98,7 +98,7 @@ while True:
             banner()
             print('The repository will download in ~/ or to your desktop\n(depending on your system)')
             print('The script will reload automatically...')
-            print('Update will start in 10 seconds...'
+            print('Update will start in 10 seconds...')
             time.sleep(10)
             os.system('sh update.sh')
             time.sleep(5)
