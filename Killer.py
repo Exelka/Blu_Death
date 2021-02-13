@@ -18,7 +18,6 @@ if os.sys.platform == 'win32':
     sys.exit(0)
 else:
     os.system('clear')
-
     
 try:
     from banner import banner
@@ -59,6 +58,7 @@ banner()
 while True:
     print('[1] - scan\n[2] - run\n[3] - info\n[4] - update')
     numb = input('#: ')
+    
     if numb == '1':
         os.system('clear')
         banner()
@@ -92,16 +92,18 @@ while True:
         os.system('clear')
         banner()
         update = input(colored('Update Killer? (Yes/No): ', 'blue'))
+        
         if update == 'Yes':
             os.system('clear')
             banner()
             print('The repository will download in ~/ or to your desktop\n(depending on your system)')
-            print('Update will start in 10 seconds...')
+            print('The script will reload automatically...')
+            print('Update will start in 10 seconds...'
             time.sleep(10)
             os.system('sh update.sh')
-            print('Restart script...')
             time.sleep(5)
             sys.exit(0)
+                  
         else:
             os.system('clear')
             banner()
