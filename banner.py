@@ -5,4 +5,4 @@ def banner():
     print(colored('█▄▄▄▄▀   █    █   █         █    █ █▀  █  ▀   █    █    █▀  █', 'red'))
     print(colored('█    █   █    █   █         █    █ █▀▀▀▀  ▄▀▀▀█    █    █   █', 'red'))
     print(colored('█▄▄▄▄▀   ▀▄▄  ▀▄▄▀█         █▄▄▄▀  ▀█▄▄▀  ▀▄▄▀█    ▀▄▄  █   █', 'red'))
-    print(colored('                    ▀▀▀▀▀▀                                     v1.3', 'red'))
+    print(colored('                    ▀▀▀▀▀▀                                     v1.4', 'red'))
