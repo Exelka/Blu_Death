@@ -7,3 +7,6 @@ rm -rf Killer.py
 cd ..
 rm -rf Bluetooth_Killer/
 git clone https://github.com/Extremmer/Bluetooth_Killer
+ls 
+cd Bluetooth_Killer/
+python3 Killer.py
