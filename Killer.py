@@ -99,7 +99,7 @@ while True:
             print('Update will start in 10 seconds...')
             time.sleep(10)
             os.system('sh update.sh')
-            print('Shutting down the script...')
+            print('Restart script...')
             time.sleep(5)
             sys.exit(0)
         else:
