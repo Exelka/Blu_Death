@@ -81,7 +81,7 @@ while True:
         os.system('clear') 
         print(colored('Successfully sent '+ str(thear) +' packages to '+ MAC_adress +'!\nPlease CTRL + Z or Enter to get out','green'))
         input()
-        os.exit(0)
+        sys.exit(0)
 
     elif numb == '3':
         os.system('clear')
