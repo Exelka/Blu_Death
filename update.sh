@@ -5,8 +5,8 @@ rm -rf Killer_install.sh
 rm update.sh
 rm -rf Killer.py
 cd ..
-rm -rf Bluetooth_Killer/
-git clone https://github.com/Extremmer/Bluetooth_Killer
+rm -rf Blu_Death/
+git clone https://github.com/Exelka/Blu_Death
 ls 
-cd Bluetooth_Killer/
+cd Blu_Death/
 python3 Killer.py
