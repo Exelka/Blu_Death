@@ -86,7 +86,7 @@ while True:
     elif numb == '3':
         os.system('clear')
         banner()
-        print('Wrote the code Extremmer781\nVK - vk.com/extremmer781\nTelegram - t.me/extremmer781')
+        print('Wrote the code Extremmer781\nVK - vk.com/exel_ka\nTelegram - t.me/')
         
     elif numb == '4':
         os.system('clear')
