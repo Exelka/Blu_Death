@@ -100,7 +100,7 @@ while True:
             print('The script will reload automatically...')
             print('Update will start in 10 seconds...')
             time.sleep(10)
-            os.system('sh update.sh')
+            os.system('sudo sh update.sh')
             time.sleep(5)
             sys.exit(0)
                   
