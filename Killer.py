@@ -1,5 +1,5 @@
 #===========================================================================
-#!/usr/bin env python
+#!/usr/bin/env python3
 import subprocess
 import sys
 import time
@@ -8,11 +8,11 @@ import os
 try:
     from termcolor import colored
 except ModuleNotFoundError:
-    print(colored('Error 01 - No library "termcolor" please run "pip install termcolor" ', 'red'))
+    print('Error 01 - No library "termcolor" please run "pip install termcolor" ')
     time.sleep(5)
     sys.exit(0)
 
-if os.sys.platform == 'win32':
+if sys.platform == 'win32':
     print(colored(' Error 02 - This script only works on Linux!!!', 'red'))
     time.sleep(5)
     sys.exit(0)
@@ -30,7 +30,7 @@ try:
     f = open('update.sh')
     f.close()
 except IOError:
-    print(colored('Error 04 - No File "update.py" ', 'red'))
+    print(colored('Error 04 - No File "update.sh" ', 'red'))
     time.sleep(5)
     sys.exit(0) 
 
@@ -67,19 +67,19 @@ while True:
     elif numb == '2':
         os.system('clear')
         banner()
-        conf = ['rfcomm','connect','MAC_adress','1']
-        MAC_adress = input(colored('MAC_adress : ','blue'))
-        thear = int(input(colored('Packages: ','blue')))
+        MAC_address = input(colored('MAC_address : ','blue'))
+        packets = int(input(colored('Packages: ','blue')))
+        conf = ['rfcomm', 'connect', MAC_address, '1']
         
-        print(colored('Connect to '+ MAC_adress +'...','green', attrs=['blink']))
+        print(colored('Connect to '+ MAC_address +'...','green', attrs=['blink']))
         time.sleep(3)
 #==========================START============================================
-        for i in range(0, thear):
+        for i in range(0, packets):
             subprocess.call(conf)
 #==========================EXIT=============================================
         time.sleep(1)
         os.system('clear') 
-        print(colored('Successfully sent '+ str(thear) +' packages to '+ MAC_adress +'!\nPlease CTRL + Z or Enter to get out','green'))
+        print(colored('Successfully sent '+ str(packets) +' packages to '+ MAC_address +'!\nPlease CTRL + Z or Enter to get out','green'))
         input()
         sys.exit(0)
 
